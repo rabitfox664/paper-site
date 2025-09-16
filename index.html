@@ -2,35 +2,48 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Paper Title — Anonymous</title>
+    <title>AIRHILT: A Human-in-the-Loop Testbed for Multimodal Conflict Detection in Aviation — Anonymous</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex"> <!-- optional during review -->
+    <meta name="robots" content="noindex"> <!-- keep during review -->
     <style>
-      body{font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial;
-           max-width:820px;margin:40px auto;padding:0 16px}
-      h1{margin:0 0 .25rem} .meta{color:#555;margin:.25rem 0 1rem}
-      .btn{display:inline-block;padding:10px 14px;border:1px solid #222;
-           border-radius:6px;text-decoration:none}
-      img{max-width:100%;height:auto}
-      video{max-width:100%}
-      code{background:#f6f8fa;padding:.1rem .3rem;border-radius:4px}
+      body{font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial;max-width:880px;margin:42px auto;padding:0 16px}
+      h1{margin:.2rem 0 .3rem;font-size:2.1rem}
+      .meta{color:#555;margin:0 0 1.2rem}
+      .row{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 1.2rem}
+      .btn{display:inline-block;padding:10px 14px;border:1px solid #222;border-radius:8px;text-decoration:none}
+      img,video{max-width:100%;height:auto;border-radius:6px}
+      .small{font-size:.9rem;color:#666}
     </style>
   </head>
   <body>
-    <h1>Paper Title (Anonymous)</h1>
+    <h1>AIRHILT: A Human-in-the-Loop Testbed for Multimodal Conflict Detection in Aviation</h1>
     <div class="meta">Under double-blind review</div>
 
-    <p><a class="btn" href="paper.pdf">Download Paper (PDF)</a></p>
-    <p><a class="btn" href="supplementary.zip">Supplementary (code/data)</a></p>
+    <div class="row">
+      <a class="btn" href="paper.pdf">Download Paper (PDF)</a>
+      <a class="btn" href="supplementary.zip">Supplementary (code/data)</a>
+      <!-- If your demo is a large Release asset, replace with that URL -->
+      <!-- <a class="btn" href="https://github.com/<anon-handle>/<repo>/releases/latest">Demo Video</a> -->
+    </div>
 
     <h2>Abstract</h2>
-    <p>Brief abstract text here (no names/affiliations).</p>
+    <p>
+      We introduce <b>AIRHILT</b> (Aviation Integrated Reasoning, Human-in-the-Loop Testbed), a modular
+      simulation environment for evaluating multimodal pilot/ATC assistance systems for conflict detection.
+      Built on Godot, AIRHILT synchronizes radio communications (ASR/TTS), camera-based visual perception,
+      and ADS-B surveillance in a unified, reproducible platform with human-in-the-loop scenarios across
+      terminal-area and en-route operations. Standardized JSON/REST interfaces let researchers swap ASR,
+      vision, decision, and TTS modules. We show a reference pipeline (fine-tuned Whisper, YOLO-based
+      detection, ADS-B logic, and structured LLM reasoning) with preliminary results on representative
+      conflict scenarios. Artifacts here are provided for anonymous peer review.
+    </p>
 
     <h2>Teaser</h2>
-    <img src="teaser.png" alt="Paper teaser">
+    <img src="teaser.png" alt="AIRHILT teaser">
 
     <h2>Video</h2>
     <video controls src="demo.mp4"></video>
+
+    <p class="small">Note: No author names or affiliations are shown to preserve double-blind review.</p>
   </body>
 </html>
-
